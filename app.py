@@ -12,7 +12,7 @@ from flask import Flask, request,render_template
 import pickle
 
 app = Flask(__name__,template_folder='template')
-week4model = pickle.load(open('Week4model.pkl', 'rb'))
+week4model = pickle.load(open('week4model.pkl', 'rb'))
 
 @app.route('/')
 def home():
