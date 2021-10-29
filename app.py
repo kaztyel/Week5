@@ -16,7 +16,7 @@ week4model = pickle.load(open('week4model.pkl', 'rb'))
 
 @app.route('/')
 def home():
-    return render_template('indexW4.html')
+    return render_template('index.html')
 
 @app.route('/predict',methods=['POST'])
 def predict():
